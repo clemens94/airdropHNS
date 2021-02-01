@@ -1,0 +1,40 @@
+{
+  "name": "hs-client",
+  "version": "0.0.9",
+  "description": "HSD node and wallet client",
+  "keywords": [
+    "http",
+    "request",
+    "socket.io",
+    "websockets"
+  ],
+  "license": "MIT",
+  "repository": "git://github.com/handshake-org/hs-client.git",
+  "homepage": "https://github.com/handshake-org/hs-client",
+  "bugs": {
+    "url": "https://github.com/handshake-org/hs-client/issues"
+  },
+  "author": "Christopher Jeffrey <chjjeffrey@gmail.com>",
+  "main": "./lib/hs-client.js",
+  "scripts": {
+    "lint": "eslint lib/ || exit 0",
+    "test": "bmocha --reporter spec test/*-test.js"
+  },
+  "bin": {
+    "hsd-cli": "./bin/hsd-cli",
+    "hsd-rpc": "./bin/hsd-rpc",
+    "hsw-cli": "./bin/hsw-cli",
+    "hsw-rpc": "./bin/hsw-rpc"
+  },
+  "dependencies": {
+    "bcfg": "~0.1.6",
+    "bcurl": "~0.1.9",
+    "bsert": "~0.0.10"
+  },
+  "devDependencies": {
+    "bmocha": "^2.1.5"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
